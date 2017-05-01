@@ -52,8 +52,6 @@ export default {
   created: function () {
     if (typeof (Storage) !== 'undefined') {
       // Code for localStorage/sessionStorage.
-      console.log(this.items)
-      console.log(this.totalPrice)
       localStorage.lastItems = JSON.stringify(this.items)
       localStorage.lastTotalPrice = JSON.stringify(this.totalPrice)
     }
