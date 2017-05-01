@@ -57,6 +57,16 @@ export default {
       ]
     }
   },
+  created: function () {
+    if (typeof (Storage) !== 'undefined') {
+      if (localStorage.lastItems) {
+        this.items = JSON.parse(localStorage.lastItems)
+      }
+      if (localStorage.lastTotalPrice) {
+        this.totalPrice = JSON.parse(localStorage.lastTotalPrice)
+      }
+    }
+  },
   methods: {
     addItem: function () {
       var text = this.newItem.trim()
