@@ -33,7 +33,7 @@
       <div>
         可用金額
         <div class="ui input">
-          <input type="text" v-model="totalPrice" size=8>
+          <input type="text" v-model.number="totalPrice" size=8>
           <div class="floating ui circular mini label">$</div>
         </div>
         <div class="ui button" v-on:click="showResult()">產生組合</div>

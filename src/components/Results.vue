@@ -42,7 +42,6 @@ export default {
   name: 'results',
   data () {
     return {
-      loading: true,
       items: this.$route.params.items,
       totalPrice: this.$route.params.totalPrice,
       itemsCount: [],
@@ -50,7 +49,7 @@ export default {
       results: []
     }
   },
-  mounted: function () {
+  created: function () {
     this.calculateItems()
   },
   methods: {

@@ -1,3 +1,3 @@
 ## price-list
 
-This is a tutorial of Vue.js + Semantic UI + Stylus
+This is a tutorial of getting started with Vue.js, Semantic UI, and Stylus.
